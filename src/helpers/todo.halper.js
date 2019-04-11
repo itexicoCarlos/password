@@ -14,7 +14,15 @@ async function addTaskHelper(name) {
   return task
 }
 
+async function getAllTasks() {
+  const res = await fetch(baseUrl)
+  const allTasks = await res.json()
+
+  return allTasks
+}
+
 
 export default {
-  addTaskHelper
+  addTaskHelper,
+  getAllTasks
 }

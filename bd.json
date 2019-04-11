@@ -9,6 +9,11 @@
       "name": "kikis",
       "isComplete": false,
       "id": 7
+    },
+    {
+      "name": "Comprar",
+      "isComplete": false,
+      "id": 8
     }
   ]
 }

@@ -16,6 +16,14 @@ export default handleActions(
         todos: state.todos.concat(action.payload)
       }
     },
+    SHOW_TASKS: (state, action) => {
+      return {
+        ...state,
+        currentTodo: '',
+        todos: action.payload
+      }
+    }
+
   },
   initState
 )

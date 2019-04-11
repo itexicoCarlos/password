@@ -1,6 +1,7 @@
 import React from 'react'
 // Components
 import Form from '../../components/Todo/Form.component'
+import List from '../../components/Todo/List.component'
 // Helpers
 import helper from '../../helpers/todo.halper'
 // * HOC
@@ -18,6 +19,7 @@ function App({ state, dispatch }) {
   return (
     <div>
       <Form sendData={sendData} />
+      <List tasks={state.todo_store.todos} />
     </div>
   )
 }

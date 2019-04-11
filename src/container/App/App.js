@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+// ! Redux
+
 
 function App({ children }) {
   return (
@@ -9,4 +11,4 @@ function App({ children }) {
   );
 }
 
-export default App;
+export default App
