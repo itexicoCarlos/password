@@ -10,9 +10,8 @@ import { addTaskAction } from '../../shared/redux/actions/todo.actions'
 
 function App({ state, dispatch }) {
 
-  const sendData = (task) => {
-    console.log(task)
-    dispatch(addTaskAction(helper.addTaskHelper(task)))
+  const sendData = async (task) => {
+    dispatch(addTaskAction(await helper.addTaskHelper(task)))
     return null
   }
 

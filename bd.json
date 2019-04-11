@@ -6,37 +6,9 @@
       "id": 6
     },
     {
-      "name": "Banana",
+      "name": "kikis",
       "isComplete": false,
       "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "name": "Hola",
-      "isComplete": false,
-      "id": 9
-    },
-    {
-      "name": "Comer",
-      "isComplete": false,
-      "id": 10
-    },
-    {
-      "name": "kikis",
-      "isComplete": false,
-      "id": 11
-    },
-    {
-      "name": "kikis",
-      "isComplete": false,
-      "id": 12
-    },
-    {
-      "name": "hola",
-      "isComplete": false,
-      "id": 13
     }
   ]
 }

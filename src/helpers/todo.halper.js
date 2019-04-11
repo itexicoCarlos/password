@@ -1,6 +1,6 @@
 const baseUrl = process.env.REACT_APP_BASE_URL;
 
-const addTaskHelper = async (name) => {
+async function addTaskHelper(name) {
   const res = await fetch(baseUrl,
     {
       method: 'POST',
@@ -11,7 +11,7 @@ const addTaskHelper = async (name) => {
       body: JSON.stringify({ name: name, isComplete: false }),
     })
   const task = await res.json()
-  return console.log('agregando task', task);
+  return task
 }
 
 
