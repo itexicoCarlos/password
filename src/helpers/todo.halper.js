@@ -1,6 +1,6 @@
 const baseUrl = process.env.REACT_APP_BASE_URL;
 
-export const addTask = async (name) => {
+const addTaskHelper = async (name) => {
   const res = await fetch(baseUrl,
     {
       method: 'POST',
@@ -14,3 +14,7 @@ export const addTask = async (name) => {
   return console.log('agregando task', task);
 }
 
+
+export default {
+  addTaskHelper
+}

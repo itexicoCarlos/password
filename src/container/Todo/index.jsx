@@ -1,14 +1,18 @@
 import React from 'react'
 // Components
 import Form from '../../components/Todo/Form.component'
-// Helper
-import { addTask } from '../../helpers/todo.halper'
+// Helpers
+import helper from '../../helpers/todo.halper'
+// * HOC
+import Connect from '../../hoc/Connect.hoc'
+// ! Redux actions
+import { addTaskAction } from '../../shared/redux/actions/todo.actions'
 
-function App() {
+function App({ state, dispatch }) {
 
   const sendData = (task) => {
     console.log(task)
-    addTask(task)
+    dispatch(addTaskAction(helper.addTaskHelper(task)))
     return null
   }
 
@@ -19,4 +23,4 @@ function App() {
   )
 }
 
-export default App
+export default Connect(App)
