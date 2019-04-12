@@ -7,7 +7,7 @@ import Todo from '../../../container/Todo'
 import Connect from '../../../hoc/Connect.hoc'
 // Actions and helpers
 import todo from '../../../helpers/todo.halper'
-import { showAllTasksAction } from '../../redux/actions/todo.actions'
+import { showTasks } from '../../redux/actions/todo.actions'
 
 
 function PrivateRoutes({ state, dispatch }) {
@@ -18,7 +18,7 @@ function PrivateRoutes({ state, dispatch }) {
 
   async function getAllTasks() {
     const result = await todo.getAllTasks()
-    return dispatch(showAllTasksAction(result))
+    return dispatch(showTasks(result))
   }
 
   return (

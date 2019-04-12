@@ -7,12 +7,12 @@ import helper from '../../helpers/todo.halper'
 // * HOC
 import Connect from '../../hoc/Connect.hoc'
 // ! Redux actions
-import { addTaskAction } from '../../shared/redux/actions/todo.actions'
+import { addTask } from '../../shared/redux/actions/todo.actions'
 
 function App({ state, dispatch }) {
 
   const sendData = async (task) => {
-    dispatch(addTaskAction(await helper.addTaskHelper(task)))
+    dispatch(addTask(await helper.addTaskHelper(task)))
     return null
   }
 
